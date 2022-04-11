@@ -1,52 +1,41 @@
-# Project Name
-> Outline a brief description of your project.
-
+# Housing Price Prediction 
+Helping US-based housing company named Surprise Housing to understand the pricing dynamics of a Australian housing market and predict selling prices
 
 ## Table of Contents
 * [General Info](#general-information)
-* [Technologies Used](#technologies-used)
 * [Conclusions](#conclusions)
-* [Acknowledgements](#acknowledgements)
+* [Technologies Used](#technologies-used)
 
-<!-- You can include any other section that is pertinent to your problem -->
 
 ## General Information
-- Provide general information about your project here.
-- What is the background of your project?
-- What is the business probem that your project is trying to solve?
-- What is the dataset that is being used?
+### Background
+A US-based housing company named Surprise Housing has decided to enter the Australian market. The company uses data analytics to purchase houses at a price below their actual values and flip them on at a higher price. For the same purpose, the company has collected a data set from the sale of houses in Australia
 
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
+### Business Problem 
+Model the price of houses with the available independent variables using Linear Regression with regularization. This model will then be used by the management to understand how exactly the prices vary with the variables. They can accordingly manipulate the strategy of the firm and concentrate on areas that will yield high returns.
+
+The company wants to know:
+
+- Which variables are significant in predicting the price of a house, and
+- How well those variables describe the price of a house.
+
 
 ## Conclusions
-- Conclusion 1 from the analysis
-- Conclusion 2 from the analysis
-- Conclusion 3 from the analysis
-- Conclusion 4 from the analysis
-
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
+- Lasso Regression uses significantly less number of independent variable for the model (only 29 out of total 50 from Recursive Feature Elimination)
+- Yet Lasso is able to explain the data relatively better. R squared value and Root Mean Squared Error is comparable to that of Ridge regression, merely 0.0004 lesser R2 score and 0.001 greater rmse for training data
+- Ridge Model outperforms Lasso for the test data. But trading off complexity vs model fit, I would go for Lasso based Regression model
 
 
 ## Technologies Used
-- library - version 1.0
-- library - version 2.0
-- library - version 3.0
+ 
+Python 3.x
 
-<!-- As the libraries versions keep on changing, it is recommended to mention the version of library used in this project -->
-
-## Acknowledgements
-Give credit here.
-- This project was inspired by...
-- References if any...
-- This project was based on [this tutorial](https://www.example.com).
-
+### Python Libraries
+- pandas - version 1.1.4
+- matplotlib - version 3.5.1
+- seaborn - version 0.11.2
+- sklearn - version 1.0.2
+- statsmodels - version 0.13.1
 
 ## Contact
-Created by [@githubusername] - feel free to contact me!
-
-
-<!-- Optional -->
-<!-- ## License -->
-<!-- This project is open source and available under the [... License](). -->
-
-<!-- You don't have to include all sections - just the one's relevant to your project -->
+Created by [@SathishKumarRamasamy](https://github.com/SathishKumarRamasamy) - feel free to contact me!
